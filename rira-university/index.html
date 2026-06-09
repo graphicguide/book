@@ -640,6 +640,11 @@ section { padding: 80px 0; }
 }
 .notice-item:hover .notice-title { color: var(--main-purple); }
 .notice-badge {
+  display: inline-flex;       /* 💡 안쪽 글자 정렬을 위해 flex로 변경 */
+  justify-content: center;    /* 💡 글자를 가로 가운데 정렬 */
+  align-items: center;        /* 💡 글자를 세로 가운데 정렬 */  
+  width: 50px;                /* 💡 '이벤트' 3글자가 패딩 감안해서 딱 예쁘게 들어가는 고정 폭 */
+  
   flex-shrink: 0;
   padding: 3px 10px;
   border-radius: 12px;
